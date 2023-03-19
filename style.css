@@ -1,0 +1,198 @@
+* { margin: 0;
+    padding: 0;
+}
+
+:root {
+    --brancoprincipal-titulo: #ffffff;
+    --subtitulo: #F9F9F9;
+    --textorodape: #C0C0C0;
+    --background-tela:#00030c;
+    --background-botao: #167BF7;
+    --fonte-principal: 'Inter';
+
+}
+
+body {
+    background-color:var(--background-tela);
+    font-family:var(--fonte-principal) ;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--brancoprincipal-titulo);
+}
+
+.principal {
+    background-image: url(./assets/Background.png);
+    /* para definir inserir um background img */
+    background-repeat: no-repeat;
+    /* para fazer com que o backgorund da tela nao se repita em baixo, como reflexo */
+    background-size: contain;
+    /* para fazer com que o backgorund ocupe 100% do container que foi definido como 100vh para ocupar a tela toda */
+    align-items: center;
+    text-align: center;
+    /* alinha tudo onde quiser quando usada dentro de um bloco (section) */
+}
+
+.container {
+    /* serve para padronizar estilos e dps sobrepor eles individualmente */
+    height: 100vh;
+    /* para fazer com que o contain definido ocupe toda a tela */
+    display: grid;
+    /* Grid é Grade, tela defniida em grades */
+    grid-template-columns: 50% 50%;
+    /* divide a tela em grades, de acordo com a porcentagem definida */
+}
+
+.container__caixa{
+    margin: 0 6em
+}
+.container__titulo {
+    color: var(--brancoprincipal-titulo);
+    font-size: 28px;
+    /* tamanho da fonte */
+    font-weight: 700;
+    /* peso da fonte */
+    /* margin-bottom: 1.84em; */
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__botao {
+    text-decoration: none;
+    /* remover sublinhado do link */
+    background-color: var(--background-botao);
+    /* cor do fundo */
+    border-radius: 8px;
+    /* adicionar borda redonda */
+    padding: 1em;
+    /* espaço entre o texto e a borda/ em é a unidade de medida padrao para responsividade entre telas (1em=16px) */
+    color: var(--brancoprincipal-titulo);
+    display: block;
+    /* define o layout do item selecionado como "bloco" que é o bloco inteiro da pagina(precisa limitar)*/
+    margin-bottom: 1em;
+    /* espaco externo do lado de fora para baixo */
+}
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    /* borda/espessura/tipo/tamanho */
+    /* border-radius: 8px; */
+    /* adicionar borda redonda */
+    /* margin-bottom: 1.6em; */
+}
+
+.container__aviso {
+    font-size: 12px;
+        /* tamanho da fonte */
+    font-weight: 400;
+       /* peso da fonte */
+    color: var(--textorodape);
+}
+
+.secundario__imagem {
+    width: 80%;
+    /* como a section ta com o nome secundario e com a config Grid 50% 50%. a imagem vai ocupar 80% so bloco em que ela se encontra. colocadas em blocos diferentes ateavez do DIV */
+}
+
+.secundario {
+    /* nome dado a caixa toda. como foi dividido em 2 sections, cada section tem dois blocos */
+    align-items: center;
+    margin: 0 10em;
+    
+}
+
+.descricao__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--brancoprincipal-titulo);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    font-family: var(--textorodape);
+    font-weight: 400;
+    /* peso da fonte */
+    font-size: 16px;
+     /* tamanho da fonte */
+    color: var(--textorodape);
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.secundario__botao {
+    display: inline-block;
+    /* serve para um conteudo usar somente o seu devido espaço, eu acho */
+    margin-top: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+    /* centaliza os textos em sua caixa  */
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--brancoprincipal-titulo);
+    margin: 1em 0;
+}
+.dispositivos__lista {
+    display: flex;
+    /* poe tudo em lista laderalizado */
+    justify-content: center;
+    /* centraliza os itens da lista acima */
+    list-style-type: none;
+    /* remove os pontinhos quando cria lista */
+
+}
+
+.lista__item {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--subtitulo);
+}
+
+.rodape {
+    text-align: center;
+    
+    
+}
+
+.rodape__logo {
+    margin: 9em 0 2.55em 0;
+}
+
+.rodape__lista {
+    display: flex;
+    /* poe tudo em lista laderalizado */
+    justify-content: center;
+    /* centraliza os itens da lista acima */
+    list-style-type: none;
+    /* remove os pontinhos quando cria lista */
+    gap: 1.5em;
+    
+
+}
+.lista__link {
+    font-weight: 400;
+    margin: 0 0 1.8em 0;
+    
+    font-size: 16px;
+    
+    
+}
+.copyrigth {
+    text-align: center;
+    margin: 1em 7.5em 6.20em 7.5em;
+    font-size: 14px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--brancoprincipal-titulo);
+    font-size: 16px;
+    font-weight: 400;
+}
