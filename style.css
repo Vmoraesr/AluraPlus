@@ -196,3 +196,70 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+/* começando a questao da responsividade mobile */
+.container {
+    display: block;
+    /* para ficar em blocos um em baixo do outro */
+    background-image: none;
+}
+
+.container__imagem {
+    width: 50vw;
+    /* ajustar o tamanho das imagens  */
+}
+
+.container__caixa {
+    margin: 2em 2em;
+    /* ajustar a borda */
+}
+
+.secundario {
+    margin: 0;
+    text-align: center;
+}
+.secundario__imagem {
+    width: 50vw;
+}
+
+.dispositivos__lista{
+    display: block;
+}
+
+.rodape__lista {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
